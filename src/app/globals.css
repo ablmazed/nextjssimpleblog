@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: #eee;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 32px; /* Adjust the size to your preference */
+}
+
+h2 {
+  font-size: 28px; /* Adjust the size to your preference */
+}
+
+h3 {
+  font-size: 24px; /* Adjust the size to your preference */
+}
+
+h4 {
+  font-size: 20px; /* Adjust the size to your preference */
+}
+
+h5 {
+  font-size: 18px; /* Adjust the size to your preference */
+}
+
+h6 {
+  font-size: 16px; /* Adjust the size to your preference */
+}
+.box::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 10px;
+  top: 10px;
+  background: #7e4af8;
+  border-radius: 5px;
+  z-index: -1;
+}
+.box{
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_links{
+    display: none;
+  }
+  .main_page{
+    flex-direction: column;
+    height: 120vh;
+  }
+  .main_right{
+    flex: 1;
+    height: 60vh;
+  }
+  .main_right img{
+    width: 250px;
+  }
+  .img_one{
+    left:-80px
+  }
+  .img_two{
+    left: 0;
+  }
+  .img_three{
+    left: -200px;
+    top: -100px;
+  }
+  .main_left{
+    width: 95vw;
+  }
+  .main_title{
+    display: none;
+  }
+  .main_title_phone{
+    display: flex;
+  }
+  .content_grid{
+    grid-template-columns: 1fr;
+  }
+  .header{
+    padding: 20px;
+    width: 99vw;
+  }
+  .container{
+    width: 100vw;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  .comment_inputs{
+    flex-direction: column
+  }
+  .comment_inputs input{
+    width:100%
+  }
+  .logo_img{
+    width:60px
+  }
+}
