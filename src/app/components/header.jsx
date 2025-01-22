@@ -65,7 +65,7 @@ const Header = () => {
           className="logo_img"
         />
         <Link href="/" className="text-[1.8rem] font-bold">
-          Bloggify
+          MazBloz
         </Link>
       </div>
       <div className="flex gap-4 items-center justify-center font-bold text-[20px] nav_links">
