@@ -79,7 +79,7 @@ const Header = () => {
           className="hover:text-[royalblue] duration-200"
           href="/technology"
         >
-          Technology
+          Tech
         </Link>
         <Link className="hover:text-[royalblue] duration-200" href="/politics">
           Politics
